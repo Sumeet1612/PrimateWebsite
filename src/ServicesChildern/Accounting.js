@@ -90,16 +90,6 @@ function Accounting() {
         </div>
       </Marquee>
 
-      <div className="DownloadLink">
-        <a style={{color:"black"}}
-          href={ProposalFinance}
-          download="ProposalFinance.pdf"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Download our Financial Services Brochure
-        </a>
-      </div>
     </div>
   );
 }
