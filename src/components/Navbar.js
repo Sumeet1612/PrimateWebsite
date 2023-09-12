@@ -3,9 +3,10 @@ import po from "../Images/po.png";
 
 function Navbar() {
   return (
-    <>
-      <div className="Navbar">
-        <div className="SmallLogo">
+    <nav class="navbar navbar-expand-lg">
+      <div className="Navbar container-fluid">
+
+      <div className="SmallLogo">
           <NavLink
             to={"/"}
             className={({ isActive, isPending }) =>
@@ -14,8 +15,8 @@ function Navbar() {
           >
             <img
               style={{
-                width: "70px",
-                height: "70px",
+                width: "100px",
+                height: "100px",
               }}
               className="Logo"
               src={po}
@@ -23,9 +24,22 @@ function Navbar() {
             />
           </NavLink>
         </div>
-        <ul className="nav">
-          <li></li>
-          <li className="nav-item FirstItem">
+     
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul className="nav navbar-nav">
+          <li className="nav-item ">
             <NavLink
               to={"/"}
               className={({ isActive, isPending }) =>
@@ -100,8 +114,9 @@ function Navbar() {
             </NavLink>
           </li>
         </ul>
+        </div>
       </div>
-    </>
+      </nav>
   );
 }
 export default Navbar;

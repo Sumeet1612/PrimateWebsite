@@ -14,7 +14,7 @@ function Contactus() {
         Want to work with us?
         <br/>
         <br/>
-        Please send an email to <strong>contact@primateoutsourcing.in </strong>
+        Please send an email to <a href = "mailto: contact@primateoutsourcing.in"><strong>contact@primateoutsourcing.in </strong></a>
         </div>
       </div>
     </div>

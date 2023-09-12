@@ -163,14 +163,15 @@ function DigitalMarketing() {
       </p>
 
       <button
+        className="button1"
         onClick={navigateToContacts}
         style={{
           backgroundColor:"black",
+          width:"200px",
           color: "white",
           fontSize: "15px",
           padding: "5px",
           borderRadius: "5px",
-          marginLeft: "45%",
           cursor: "pointer",
         }}
       >
