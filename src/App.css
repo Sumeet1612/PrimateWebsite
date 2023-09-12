@@ -39,7 +39,7 @@ body {
   margin-left: 30px;
 }
 
-.Home{
+.Home {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,41 +178,41 @@ body {
   border-radius: 7%;
   box-shadow: 5px 5px 15px #999999;
 }
+.Accounting .DownloadLink {
+  display: flex;
+  justify-content: center;
+}
 
 .FinancialServices .slide-card:hover {
   scale: 1.1;
   cursor: no-drop;
 }
 
-.FinancialServices .slide-card:first-child{
+.FinancialServices .slide-card:first-child {
   margin-left: 30px;
 }
 
-
-
-
-
-@media all and (max-width:300px){
-  .Home .Logo{
+@media all and (max-width: 300px) {
+  .Home .Logo {
     width: 200px;
-    height: 200px
+    height: 200px;
   }
 
   .navbar {
     width: 480px;
   }
 
-  .navbar .Navbar .nav{
+  .navbar .Navbar .nav {
     display: flex;
     flex-direction: column;
     justify-items: center;
   }
-  .MasterCard .BoxCenter1{
+  .MasterCard .BoxCenter1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .MasterCard .BoxCenter2{
+  .MasterCard .BoxCenter2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,42 +221,38 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
 
-  .DigitalMarketing .button1{
+  .DigitalMarketing .button1 {
     margin-left: 0;
   }
 }
 
-
-@media all and (max-width:768px){
-  .DigitalMarketing{
+@media all and (max-width: 768px) {
+  .DigitalMarketing {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .DigitalMarketing .MarketingServices{
+  .DigitalMarketing .MarketingServices {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .DigitalMarketing .button1{
+  .DigitalMarketing .button1 {
     margin-left: 0;
   }
 
-  .MasterCard .BoxCenter1{
+  .MasterCard .BoxCenter1 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .MasterCard .BoxCenter2{
+  .MasterCard .BoxCenter2 {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
 }
-

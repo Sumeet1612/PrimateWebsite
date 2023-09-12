@@ -1,4 +1,5 @@
 import Marquee from "react-fast-marquee";
+import ProposalFinance from "../Docs/ProposalFinance.pdf";
 
 function Accounting() {
   return (
@@ -88,79 +89,17 @@ function Accounting() {
           </div>
         </div>
       </Marquee>
-      {/* <div className="FinancialServices">
-          <div className="slide-card">
-            <div>
-              <span>Setting up Offshore Companies</span>
-            </div>
-          </div>
 
-          <div className="slide-card">
-            <div>
-              <span>RBI, FEMA & FOREX Law Compliances</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>Business setup in India</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>Company Formation & Secretarial Complaince</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>CPA Book Keeping</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>Payable Accounting</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>Income Tax, GST, Excise</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>TDS, Monthly, Annual Compliance</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span> Payroll Processing</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>International Taxation & Transfer Pricing</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>Corporate Finance</span>
-            </div>
-          </div>
-
-          <div className="slide-card">
-            <div>
-              <span>Setup Xero/Quickbook etc.</span>
-            </div>
-          </div>
-        </div> */}
+      <div className="DownloadLink">
+        <a style={{color:"black"}}
+          href={ProposalFinance}
+          download="ProposalFinance.pdf"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Download our Financial Services Brochure
+        </a>
+      </div>
     </div>
   );
 }
