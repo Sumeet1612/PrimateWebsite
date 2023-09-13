@@ -1,9 +1,14 @@
 import Marquee from "react-fast-marquee";
-import ProposalFinance from "../Docs/ProposalFinance.pdf";
+import { motion } from "framer-motion";
 
 function Accounting() {
   return (
-    <div className="Accounting">
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
+      className="Accounting"
+    >
       <h5
         style={{
           fontSize: "24px",
@@ -89,8 +94,7 @@ function Accounting() {
           </div>
         </div>
       </Marquee>
-
-    </div>
+    </motion.div>
   );
 }
 export default Accounting;

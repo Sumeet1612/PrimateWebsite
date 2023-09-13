@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 function MedicalBilling() {
   return (
-    <div className="MedicalBilling">
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
+      className="MedicalBilling"
+    >
       <h1
         style={{
           fontSize: "26px",
@@ -121,7 +128,9 @@ function MedicalBilling() {
         financial health of healthcare facilities.
       </p>
       <br />
-      <h2 style={{ fontSize: "24px", fontWeight: "bold", textAlign:"center" }}>What We Do</h2>
+      <h2 style={{ fontSize: "24px", fontWeight: "bold", textAlign: "center" }}>
+        What We Do
+      </h2>
       <p style={{ fontSize: "20px", textAlign: "justify" }}>
         We want you to stop worrying about your revenue cycle, and focus on what
         you should: Your Patients. We at Primate adopt a simple yet effective
@@ -161,7 +170,7 @@ function MedicalBilling() {
         </li>
       </ul>
       <br />
-      <h2 style={{ fontSize: "24px", fontWeight: "bold", textAlign:"center"}}>
+      <h2 style={{ fontSize: "24px", fontWeight: "bold", textAlign: "center" }}>
         Account Receivables Follow up
       </h2>
       <p style={{ fontSize: "20px", textAlign: "justify" }}>
@@ -171,7 +180,7 @@ function MedicalBilling() {
         paid for, thoroughly and promptly.
       </p>
       <br />
-      <h2 style={{ fontSize: "24px", fontWeight: "bold" , textAlign:"center"}}>
+      <h2 style={{ fontSize: "24px", fontWeight: "bold", textAlign: "center" }}>
         Complete Revenue Cycle Management
       </h2>
       <p style={{ fontSize: "20px", textAlign: "justify" }}>
@@ -180,7 +189,7 @@ function MedicalBilling() {
         work on every step of the revenue cycle to reduce the cost of
         collection, improve efficiency and increase cash flow.
       </p>
-    </div>
+    </motion.div>
   );
 }
 export default MedicalBilling;

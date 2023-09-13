@@ -1,6 +1,14 @@
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 function Services() {
   return (
-    <div className="MasterCard">
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
+      className="MasterCard"
+    >
       <div className="BoxCenter1">
         <div className="card slide-card">
           <div className="card-body">
@@ -13,9 +21,9 @@ function Services() {
             <p className="card-text">
               Facilitating US and Canada freight transportation logistics.
             </p>
-            <a href={"/services/logistics"} className="btn btn-light">
+            <Link to="/services/logistics" className="btn btn-light">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -30,9 +38,9 @@ function Services() {
             <p className="card-text">
               Processing healthcare payments and claims.
             </p>
-            <a href={"/services/medicalbilling"} className="btn btn-light">
+            <Link to="/services/medicalbilling" className="btn btn-light">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -47,9 +55,9 @@ function Services() {
             <p className="card-text">
               Providing off-site administrative support.
             </p>
-            <a href={"/services/remoteassistant"} className="btn btn-light">
+            <Link to="/services/remoteassistant" className="btn btn-light">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -66,9 +74,9 @@ function Services() {
             <p className="card-text">
               Promoting businesses online via various channels.
             </p>
-            <a href={"/services/digitalmarketing"} className="btn btn-light">
+            <Link to="/services/digitalmarketing" className="btn btn-light">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -83,14 +91,14 @@ function Services() {
             <p className="card-text">
               Managing financial records and transactions.
             </p>
-            <a href={"/services/accounting"} className="btn btn-light">
+            <Link to="/services/accounting" className="btn btn-light">
               Read More
-            </a>
+            </Link>
           </div>
         </div>
       </div>
       <br />
-    </div>
+    </motion.div>
   );
 }
 

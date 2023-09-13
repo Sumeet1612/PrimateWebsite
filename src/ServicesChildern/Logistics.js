@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 function Logistics() {
   return (
-    <div className="Logistics">
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
+      className="Logistics"
+    >
       <h1
         style={{
           fontSize: "26px",
@@ -29,11 +36,17 @@ function Logistics() {
         United Parcel Service, Online Freight Services and others.
       </p>
       <br />
-      <p style={{textAlign: "center"}} ><strong style={{ fontSize: "26px" }}>Top Impacting factors</strong></p>
+      <p style={{ textAlign: "center" }}>
+        <strong style={{ fontSize: "26px" }}>Top Impacting factors</strong>
+      </p>
       <br />
 
-      <p style={{textAlign: "center"}} ><strong style={{textAlign: "center" }}>Increase in trading activities due to globalization</strong></p>
-      <p style={{ fontSize: "20px",textAlign: "justify"  }}>
+      <p style={{ textAlign: "center" }}>
+        <strong style={{ textAlign: "center" }}>
+          Increase in trading activities due to globalization
+        </strong>
+      </p>
+      <p style={{ fontSize: "20px", textAlign: "justify" }}>
         Dynamic market conditions and improvement in the global economy are the
         key factors driving globalization. Various activities related to trade
         have been witnessed to increase, owing to rise in globalization. Hence,
@@ -49,16 +62,18 @@ function Logistics() {
       </p>
       <br />
 
-      <p style={{textAlign: "center"}} ><strong style={{textAlign: "center" }}>
-        Rise in focus of manufacturers and retailers on core competencies{" "}
-      </strong></p>
-      <p style={{ fontSize: "20px",textAlign: "justify"  }}>
+      <p style={{ textAlign: "center" }}>
+        <strong style={{ textAlign: "center" }}>
+          Rise in focus of manufacturers and retailers on core competencies{" "}
+        </strong>
+      </p>
+      <p style={{ fontSize: "20px", textAlign: "justify" }}>
         An Increase in focus of retailers and manufacturers on their core
         business and sub-contracting activities, such as logistics where they
         have less expertise, has been witnessed in the market. The goal here is
         to promote respective specialization in production and distribution.
       </p>
-    </div>
+    </motion.div>
   );
 }
 export default Logistics;

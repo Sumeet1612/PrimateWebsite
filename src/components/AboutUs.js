@@ -1,6 +1,11 @@
+import { motion } from "framer-motion";
+
 function AboutUs() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
       style={{
         display: "flex",
         justifyContent: "center",
@@ -9,7 +14,14 @@ function AboutUs() {
     >
       <div
         className="card"
-        style={{ width: "70rem", marginTop: "100px", border: "none", textAlign:"justify", marging:"10%", fontSize:"20px"}}
+        style={{
+          width: "70rem",
+          marginTop: "100px",
+          border: "none",
+          textAlign: "justify",
+          marging: "10%",
+          fontSize: "20px",
+        }}
       >
         <div className="card-body">
           In a notably classic origin tale, our journey commenced within the
@@ -20,7 +32,7 @@ function AboutUs() {
           strengths while we proficiently handle tasks beyond their scope.
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

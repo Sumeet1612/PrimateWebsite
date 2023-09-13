@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 function DigitalMarketing() {
   const navigate = useNavigate();
@@ -6,9 +7,14 @@ function DigitalMarketing() {
   const navigateToContacts = () => {
     navigate("/contactus");
   };
-  
+
   return (
-    <div className="DigitalMarketing">
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
+      className="DigitalMarketing"
+    >
       <h1
         style={{
           fontSize: "26px",
@@ -166,8 +172,8 @@ function DigitalMarketing() {
         className="button1"
         onClick={navigateToContacts}
         style={{
-          backgroundColor:"black",
-          width:"200px",
+          backgroundColor: "black",
+          width: "200px",
           color: "white",
           fontSize: "15px",
           padding: "5px",
@@ -177,7 +183,7 @@ function DigitalMarketing() {
       >
         Free Consultation
       </button>
-    </div>
+    </motion.div>
   );
 }
 export default DigitalMarketing;

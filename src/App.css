@@ -4,6 +4,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 24px;
   line-height: 32px;
+  scroll-behavior: smooth;
 }
 
 .nav-link.active {
@@ -21,7 +22,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 5%;
+  margin: 2%;
+  margin-left: 5%;
   align-items: center;
 }
 
@@ -31,6 +33,7 @@ body {
 
 .Navbar .SmallLogo {
   margin-left: -5%;
+  height: 100px;
 }
 
 .nav .nav-item .nav-link {
@@ -47,7 +50,7 @@ body {
 
 .nav .nav-item .nav-link:hover {
   color: black;
-  scale: 1.2;
+  scale: 1.05;
 }
 
 .Logistics {
@@ -72,7 +75,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 0% 5%;
-  gap: 70px;
+  gap: 30px;
 }
 
 .MasterCard .BoxCenter1 {
@@ -119,20 +122,13 @@ body {
   font-size: 20px;
   line-height: 32px;
   width: 350px;
-  margin-bottom: 2.5%;
+  margin-bottom: 20px;
   padding: 1%;
   border-radius: 7%;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0);
-}
-
-.MasterCard .BoxCenter {
-  display: flex;
-  width: 100%;
-  margin-left: 200px;
-  gap: 70px;
 }
 
 .MasterCard .slide-card:hover {
@@ -190,6 +186,20 @@ body {
 
 .FinancialServices .slide-card:first-child {
   margin-left: 30px;
+}
+
+.Jobs{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Jobs h2{
+  margin: 15px 0px;
+}
+
+.Jobs a{
+  margin-bottom: 40px;
 }
 
 @media all and (max-width: 300px) {

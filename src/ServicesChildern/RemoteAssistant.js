@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 function RemoteAssistant() {
   return (
-    <div className="RemoteAssistant">
+    <motion.div
+      initial={{ opacity: "0" }}
+      animate={{ opacity: "1" }}
+      transition={{ delay: "0.3" }}
+      className="RemoteAssistant"
+    >
       <h1
         style={{
           fontSize: "26px",
@@ -35,7 +42,7 @@ function RemoteAssistant() {
         administrative operations but also contributes to increased productivity
         and overall business success.
       </p>
-    </div>
+    </motion.div>
   );
 }
 export default RemoteAssistant;
